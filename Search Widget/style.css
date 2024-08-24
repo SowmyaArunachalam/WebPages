@@ -1,0 +1,73 @@
+/* Universal Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Body Styling */
+body {
+    background-image: linear-gradient(chocolate, burlywood);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Button Focus */
+.btn:focus {
+    outline: none;
+}
+
+/* Input Field Styling */
+.search .input {
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    border: 0;
+    background-color: #fff;
+    transition: width 0.3s ease; /* Rounded corners on the right side */
+}
+
+/* Expand the input field when active */
+.search.active .input {
+    width: 200px;
+    /* Fully rounded corners when expanded */
+}
+
+/* Button Styling */
+.btn {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-image: url(s1.jpg);
+    background-size: cover;
+    position: absolute; /* Positioned absolutely within .search */
+    left: 0; /* Start at the left edge of the search container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: left 0.3s ease; /* Transition for left property */
+}
+
+/* Search Container Styling */
+.search {
+    position: relative; /* Ensures the .btn is positioned relative to .search */
+    height: 50px; /* Adjusted to match the height of the input and button */
+    display: flex;
+    align-items: center; /* Center-aligns the input and button vertically */
+}
+
+/* Move the button to the left when active */
+.search.active .btn {
+    left: 200px; /* Moves the button to the left, adjust as necessary */
+}
+
+/* Remove outline on input focus */
+.input:focus {
+    outline: none;
+}
