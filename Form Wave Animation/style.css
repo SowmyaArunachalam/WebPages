@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: steelblue;
+    color: white;
+}
+
+.container {
+    padding: 20px 40px;
+    width: 5% 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 5px;
+}
+
+.container a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #faf8f8;
+    padding: 15px 0;
+    color: white;
+    margin: 15px 0;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+}
+
+.control input:focus, .control input:valid {
+    outline: 0;
+    border-bottom-color: skyblue;
+}
+
+.btn {
+    background-color: lightblue;
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-size: 16px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+p {
+    margin-top: 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.control input:focus + label,
+.control input:valid + label {
+    color: lightblue;
+    transform: translateY(-30px);
+}
