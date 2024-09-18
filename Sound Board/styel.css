@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    flex-wrap: wrap;
+    font-weight: 400;
+    background:linear-gradient(rgb(50, 140, 219) 30%,rgb(14, 21, 123));
+}
+
+.btn{
+    background: rgb(248, 218, 181);
+    border-radius: 5px;
+    border: none;
+    color: black;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.btn:focus{
+    outline: none;
+}
